@@ -96,7 +96,7 @@ export default function App() {
     oops.style.animation = "fadeOut 2.5s ease forwards"
 
     document.body.appendChild(oops)
-    setTimeout(() => oops.remove(), 2500)
+    setTimeout(() => oops.remove(), 3500)
   }
 
   const compliments = [
