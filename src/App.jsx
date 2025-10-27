@@ -104,8 +104,16 @@ export default function App() {
       front: "Reason #1",
       back: "Your laugh should be illegal. (But I aint snitching tho.)",
     },
-    { front: "Reason #2", back: "Certified chaos & good vibes distributor." },
-    { front: "Reason #3", back: "You made the last 15 days way more fun." },
+    {
+      front: "Reason #2",
+      back: "Your voice has that “I could listen to this all day” bug in it. Still waiting for the patch.",
+    },
+    ,
+    {
+      front: "Reason #4",
+      back: "You’re crazy hardworking and tougher than you look — low-key inspiring.",
+    },
+
     {
       front: "Bonus",
       back: "And yes I would still like you if you were a worm. 😒",
@@ -148,14 +156,6 @@ export default function App() {
         {compliments.map((c, i) => (
           <FlipCard key={i} front={c.front} back={c.back} />
         ))}
-      </section>
-
-      <section className="note">
-        <p>
-          P.S. There might be a little real-world surprise later today. Keep an
-          eye on your door 👀
-        </p>
-        <p className="sig">— {FROM_NAME}</p>
       </section>
 
       <footer className="footer">
