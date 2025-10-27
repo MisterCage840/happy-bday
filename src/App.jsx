@@ -134,7 +134,7 @@ export default function App() {
         ))}
       </div>
 
-      <header className="hero">
+      <header className="hero fade-in">
         <div className="tag">🎉 Birthday Mode</div>
         <h1>
           Happy Birthday, <span className="highlight">{HER_NAME}</span>!
@@ -152,15 +152,29 @@ export default function App() {
         </button>
       </header>
 
-      <section className="cards">
+      <section className="cards fade-in">
         {compliments.map((c, i) => (
           <FlipCard key={i} front={c.front} back={c.back} />
         ))}
       </section>
 
-      <footer className="footer">
+      <section className="letter fade-in">
+        <h2>One Last Thing</h2>
+        <p>
+          I know I joke a lot — but I really mean it when I say I admire you.
+          You’ve got this strength, calm, and kindness that’s rare. Even when
+          things aren’t easy, you somehow keep going — and that’s something I
+          genuinely look up to.
+        </p>
+        <p>
+          So, happy birthday. You deserve good days, real laughter, and peace
+          that stays.
+        </p>
+      </section>
+
+      <footer className="footer ">
         <small>
-          <strong>28/10/2025 </strong>
+          <strong>29/10/2025 </strong>
         </small>
       </footer>
     </div>
